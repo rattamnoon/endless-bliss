@@ -1,18 +1,20 @@
-import { motion } from "framer-motion";
+import { animated, useSpring } from "@react-spring/web";
 
 interface SiteHeaderProps {
   title: string;
   subtitle: React.ReactNode;
 }
 
-export default function SiteHeader({ title, subtitle }: SiteHeaderProps) {
+export const SiteHeader = ({ title, subtitle }: SiteHeaderProps) => {
+  const props = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: 500,
+    duration: 1000,
+  });
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 0.5 }}
-      className="flex flex-col gap-4"
-    >
+    <animated.div style={props} className="flex flex-col gap-4">
       <h1 className="text-6xl font-bold text-wrap font-sans bg-gradient-to-r from-indigo-500 via-indigo-400 to-indigo-300 inline-block text-transparent bg-clip-text">
         {title}
       </h1>
@@ -23,6 +25,6 @@ export default function SiteHeader({ title, subtitle }: SiteHeaderProps) {
         </h1>
         <h1 className="text-4xl font-bold text-wrap">🌻</h1>
       </div>
-    </motion.div>
+    </animated.div>
   );
-}
+};
