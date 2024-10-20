@@ -2,7 +2,11 @@ import { animated, useSpring } from "@react-spring/web";
 
 interface SiteHeaderProps {
   title: string;
-  subtitle: React.ReactNode;
+  subtitle: {
+    text: string;
+    href: string;
+    icon: string;
+  };
 }
 
 export const SiteHeader = ({ title, subtitle }: SiteHeaderProps) => {
@@ -19,12 +23,17 @@ export const SiteHeader = ({ title, subtitle }: SiteHeaderProps) => {
         {title}
       </h1>
 
-      <div className="flex items-end justify-end gap-2">
+      <a
+        href={subtitle.href}
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-end justify-end gap-2"
+      >
         <h1 className="text-4xl font-bold text-wrap text-right font-sans bg-gradient-to-r from-indigo-300 via-indigo-400 to-indigo-500 inline-block text-transparent bg-clip-text">
-          {subtitle}
+          {subtitle.text}
         </h1>
-        <h1 className="text-4xl font-bold text-wrap">🌻</h1>
-      </div>
+        <h1 className="text-4xl font-bold text-wrap">{subtitle.icon}</h1>
+      </a>
     </animated.div>
   );
 };
