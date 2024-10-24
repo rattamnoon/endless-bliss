@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/27986ab0-c4d5-46b8-801a-dfb2b0a06d3e/deploy-status)](https://app.netlify.com/sites/eclectic-cucurucho-7669b7/deploys)
-
 # Welcome to Remix!
 
 - 📖 [Remix docs](https://remix.run/docs)
@@ -40,4 +38,5 @@ Make sure to deploy the output of `npm run build`
 ## Styling
 
 This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+
 # endless-bliss
