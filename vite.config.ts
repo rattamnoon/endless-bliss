@@ -1,3 +1,4 @@
+import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
 import { vitePlugin as remix } from "@remix-run/dev";
 import { vercelPreset } from "@vercel/remix/vite";
 import { defineConfig } from "vite";
@@ -21,6 +22,7 @@ export default defineConfig({
       },
       presets: [vercelPreset()],
     }),
+    netlifyPlugin(),
     tsconfigPaths(),
   ],
 });
