@@ -15,7 +15,7 @@ export const content = {
     },
   },
   swiperCard: {
-    enable: true,
+    enable: false,
     images: [
       "images/1.jpg",
       "images/2.jpg",
