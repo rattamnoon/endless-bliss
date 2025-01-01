@@ -6,12 +6,18 @@ export const content = {
   },
   siteHeader: {
     enable: true,
-    title: "Happy Anniversary!",
+    title: "Happy Anniversary",
     subtitle: {
       enable: true,
-      text: "@cchorfah",
-      icon: "🌻",
+      text: "My love! Thank you for the wonderful moments we've shared together.",
+      icon: "🌈",
       href: "https://www.instagram.com/cchorfah",
+    },
+    button: {
+      enable: true,
+      text: "Begin Our Journey",
+      color:
+        "bg-indigo-500 bg-gradient-to-r from-indigo-500 via-indigo-400 to-indigo-300",
     },
   },
   swiperCard: {
