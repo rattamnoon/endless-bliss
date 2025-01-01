@@ -1,8 +1,8 @@
 import React from "react";
 import { Content } from "~/confings/content";
-import { SiteHeader } from "./SiteHeader";
+import { SiteHeader } from "../SiteHeader";
 
-const WelcomeSection: React.FC<Content["siteHeader"]> = ({
+export const Welcome: React.FC<Content["siteHeader"]> = ({
   title,
   subtitle,
   button,
@@ -22,5 +22,3 @@ const WelcomeSection: React.FC<Content["siteHeader"]> = ({
     </div>
   );
 };
-
-export default WelcomeSection;

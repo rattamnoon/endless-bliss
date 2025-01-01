@@ -6,7 +6,7 @@ export const content = {
   },
   siteHeader: {
     enable: true,
-    title: "Happy Anniversary",
+    title: "Happy Anniversary!",
     subtitle: {
       enable: true,
       text: "My love! Thank you for the wonderful moments we've shared together.",
